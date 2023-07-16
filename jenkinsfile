@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                echo 'This helps to clone'
+            }
+        }
+            stage('Build') {
+            steps {
+                echo 'This help to compile'
+            }
+        }
+            stage('Unit test') {
+            steps {
+                echo 'Used to testig'
+            }
+        }
+            stage('Package') {
+            steps {
+                echo 'Used to send bundles'
+            }
+        }
+    }
+}
